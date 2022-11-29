@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+    --font-family: 'Inter', sans-serif;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --font-weight-800: 800;
+    --fs-paragraph: 15px;
+
+    --clr-primary-orange: hsl(35, 86%, 56%);
+    --clr-primary-red: hsl(5, 85%, 63%);
+    --clr-neutral-white:  hsl(36, 100%, 99%);
+    --clr-neutral-gray-blue: hsl(233, 8%, 79%);
+    --clr-neutral-dark-blue: hsl(236, 13%, 42%);
+    --clr-neutral-darker-blue: hsl(240, 100%, 5%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+body, div, a, p, button, h1, h5, h2{
+    font-family: var(--font-family);
+}
+
+.nav-link{
+    transition: 300ms ease;
+}
+
+.nav-link:hover{
+    color: var(--clr-primary-orange);
+}
+
+.nav-link{
+    color: black;
+    font-size: 1.25rem;
+}
+
+.hero__heading{
+        font-size: 3rem;
+        font-weight: 900;
+}
+
+.hero__text{
+    font-size: 14px;
+}
+
+.btn-readmore{
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-primary-red);
+    border-radius: 0%;
+    letter-spacing: 0.125rem;
+    font-weight: bold;
+    transition: 500ms ease;
+}
+
+.btn-readmore:hover{
+    background-color: var(--clr-neutral-darker-blue);
+    color: #fff;
+}
+
+.new__section{
+    background-color: var(--clr-neutral-darker-blue);
+    padding: 2rem;
+}
+
+.new__section h5{
+    color: #fff;
+}
+
+.new__section p{
+    font-size: 12px;
+    color: var(--clr-neutral-gray-blue);
+}
+
+.new__section h5{
+    font-weight: var(--font-weight-700);
+}
+
+.new__header{
+    color: var(--clr-primary-orange);
+    font-weight: var(--font-weight-800);
+}
+
+.topics{
+    flex-grow: 1;
+    margin-top: 2rem;
+}
+.topics:not(:last-child){
+    border-bottom: 1px solid var(--clr-neutral-dark-blue);
+}
+
+.numbers{
+    color: var(--clr-neutral-gray-blue);
+    font-weight: 800;
+}
+
+.content__headers{
+    font-weight: var(--font-weight-800);
+    transition: 500ms ease;
+}
+
+.content__headers:hover{
+    cursor: pointer;
+    color: var(--clr-primary-red);
+}
+
+img.product__images{
+    width: 30%;
+    object-fit: contain;
+}
+
+p.content__desc{
+    font-size: 14px;
+}
+
+.offcanvas{
+    width: 250px !important;
+}
+
+ .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 256)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    font-size: 1.75rem;
+  }
+  
+  .navbar-toggler {
+   border: none;
+  } 
+
+  .btn-close{ 
+    font-size: 1.75rem;
+  }
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    margin-top: 2rem;
+  }
+  
+  .attribution a {
+    color: hsl(228, 47%, 61%);
+  }
+
+  @media screen and (max-width: 760px) {
+    .offcanvas{
+        padding: 2rem;
+    }
+
+    .nav-item{
+        line-height: 3.5rem;
+    }
+    
+  }
